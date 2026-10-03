@@ -1,5 +1,6 @@
 # Financial Web App
 
+<img width="2200" height="1466" alt="intro-bg" src="https://github.com/user-attachments/assets/082c4530-efd2-41e0-a728-01c776e64434" />
 
 
 FinSimp is a financial web app for personal and small business use scenarios. The aim of this project is to make the process of accounting meaningfull, simple, and accurate. FinSimp is not a full featured all-in-one business solution. 
