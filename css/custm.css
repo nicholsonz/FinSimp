@@ -1,0 +1,870 @@
+/* Custom CSS for all customizations */
+
+/* Background styling */
+body {
+    /* +'s and 0's */
+    background: radial-gradient(circle at top left,transparent 9%, #222222 10% ,#222222 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #222222 10% ,#222222 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #222222 10% ,#222222 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #222222 10% ,#222222 15% , transparent 16%),radial-gradient(circle, transparent 25%, #282727  26%),linear-gradient(0deg, transparent 44%, #222222 45%, #222222 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #222222 45%, #222222 55%, transparent 56%);
+    background-size: 1em 1em;
+    background-color: #282727;
+    opacity: 0.85;
+    background-attachment: fixed;
+    
+    /* Squares */
+    /* background: linear-gradient(45deg, #0000 calc(25% / 3), #2a2a2a 0 calc(50% / 3), #0000 0 calc(250% / 3), #2a2a2a 0 calc(275% / 3), #0000 0), linear-gradient(45deg, #2a2a2a calc(25% / 3), #0000 0 calc(50% / 3), #2a2a2a 0 25%, #0000 0 75%, #2a2a2a 0 calc(250% / 3), #0000 0 calc(275% / 3), #2a2a2a 0), linear-gradient(-45deg, #0000 calc(25% / 3), #2a2a2a 0 calc(50% / 3), #0000 0 calc(250% / 3), #2a2a2a 0 calc(275% / 3), #0000 0), linear-gradient(-45deg, #2a2a2a calc(25% / 3), #0000 0 calc(50% / 3), #2a2a2a 0 25%, #0000 0 75%, #2a2a2a 0 calc(250% / 3), #0000 0 calc(275% / 3), #2a2a2a 0) #353535;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    background-attachment: fixed; */
+
+/* background: linear-gradient(45deg, #1e1e1f 0%, #1e1e1f 5%,transparent 5%, transparent 10%, #1e1e1f 10%, #1e1e1f 15%,transparent 15%,transparent 20%, #1e1e1f 20%, #1e1e1f 25%,transparent 25%,transparent 30%, #1e1e1f 30%, #1e1e1f 35%,transparent 35%,transparent 40%, #1e1e1f 40%, #1e1e1f 45%,transparent 45%,transparent 50%, #1e1e1f 50%, #1e1e1f 55%,transparent 55%,transparent 60%, #1e1e1f 60%, #1e1e1f 65%,transparent 65%,transparent 70%, #1e1e1f 70%, #1e1e1f 75%,transparent 70%,transparent 80%, #1e1e1f 80%, #1e1e1f 85%,transparent 85%,transparent 90%, #1e1e1f 90%, #1e1e1f 95%,transparent 95%), linear-gradient(135deg, #1e1e1f 0%, #1e1e1f 5%,transparent 5%, transparent 10%, #1e1e1f 10%, #1e1e1f 15%,transparent 15%,transparent 20%, #1e1e1f 20%, #1e1e1f 25%,transparent 25%,transparent 30%, #1e1e1f 30%, #1e1e1f 35%,transparent 35%,transparent 40%, #1e1e1f 40%, #1e1e1f 45%,transparent 45%,transparent 50%, #1e1e1f 50%, #1e1e1f 55%,transparent 55%,transparent 60%, #1e1e1f 60%, #1e1e1f 65%,transparent 65%,transparent 70%, #1e1e1f 70%, #1e1e1f 75%,transparent 70%,transparent 80%, #1e1e1f 80%, #1e1e1f 85%,transparent 85%,transparent 90%, #1e1e1f 90%, #1e1e1f 95%,transparent 95%);
+        background-size: 2em 2em;
+        background-color: #2a2727;
+        background-attachment: fixed; */
+    
+    /* Original wallpaper background */
+    /* margin: 0;
+    background-color: #19302E;
+    background-color: #2b353f;
+    background-image: url("../images/blacksqrs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scrollbar-width: none; */
+}
+
+/* Color styling for entire site */
+.flat-blue-fade {
+    color: #fff;
+    background-color: rgba(21, 45, 77, 0.2)
+}
+
+/* Manual side menu */
+.side-menu {
+  position: fixed;
+  /* z-index: 1; */
+  top: 100px;
+  overflow-x: hidden;
+}
+
+.manual {
+  margin-left: 340px; /* Same width as the sidebar + left position in px */
+  padding: 0px 10px;
+}
+
+@media (max-width: 750px) {
+  .side-menu {
+    display: none;
+    }
+  .manual {
+    margin-left: 20px;
+    padding: 0px;
+  }
+}
+
+/* Underline UL list links */
+ul a:hover {
+    text-shadow: 1px 0px 15px #fff;
+}
+
+/* Side menu text hover */
+.hover-underline {
+    font-size: 1rem;
+    color: #ffff;
+    position: relative;
+    display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, #c7e5ec4d);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+    transform: scaleX(1);
+}
+
+/* Acive blue for nav links and JScript */
+.w3-active-blue {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 0px 15px #fff;
+}
+
+.avatar {
+    width: 46px;
+}
+
+.avatar-active {
+    box-shadow: 0px 0px 15px #fff;
+    border-radius: 10px;
+}
+
+.w3-bar-block .w3-button {
+    width: 85%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Sticky div */
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+}
+
+/* Centered list */
+ul.centered {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Alertify styling */
+.alertify-notifier .ajs-message.ajs-success {
+    color: rgb(14, 12, 12);
+    background: rgba(91, 189, 114, 0.75);
+    filter: drop-shadow(0px 0px 15px #bbd5f0ab);
+    border-radius: 5px;
+}
+
+.alertify-notifier .ajs-message.ajs-error {
+    color: rgb(14, 12, 12);
+    background: rgba(217, 92, 92, 0.75);
+    filter: drop-shadow(0px 0px 15px #bbd5f0ab);
+    border-radius: 5px;
+}
+
+.alertify-notifier .ajs-message.ajs-warning {
+    color: rgb(14, 12, 12);
+    background: rgba(252, 248, 215, 0.75);
+    filter: drop-shadow(0px 0px 15px #bbd5f0ab);
+    border-radius: 5px;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none
+}
+
+/* Index.html css */
+.w3-main-content {
+    max-width: 1100px;
+    margin-top: 100px;
+    margin-bottom: 80px
+}
+
+.w3-main,
+#main {
+    transition: margin-left 0.4s;
+    margin-left: 240px;
+    margin-top: 15px
+}
+
+/* Override text decorations for a links*/
+a {
+    background-color: transparent;
+    text-decoration: none
+}
+
+/* Button Styling */
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 2px;
+    background-color: rgba(63, 75, 87, 0.7);
+    color: white;
+    border-radius: 4px
+}
+
+/* Header Style */
+.w3-header th {
+    background-color: #1a1919;
+    color: whitesmoke
+}
+
+/* Table style */
+.w3-striped tbody tr:nth-child(even) {
+    background-color: rgba(63, 75, 87, 0.7)
+}
+
+.w3-table-all tr:nth-child(odd) {
+    background-color: #1281db
+}
+
+.w3-table-all tr:nth-child(even) {
+    background-color: #3c6594
+}
+
+/* Border colors */
+.w3-border-metro-yellow,
+.w3-hover-metro-yellow:hover {
+    color: #fff;
+    border-color: #ffd43b !important
+}
+
+/* Hover styles */
+.w3-hoverable tbody tr:hover,
+.w3-ul.w3-hoverable li:hover {
+    background-color: #297deb;
+    color: #fff
+}
+
+.w3-hoverable-income tr:hover,
+.w3-ul.w3-hoverable-income li:hover {
+    background-color: rgb(133, 192, 23, 0.5);
+    color: #fff
+}
+
+.w3-hoverable-expense tr:hover,
+.w3-ul.w3-hoverable-expense li:hover {
+    background-color: rgb(248, 94, 47, 0.5);
+    color: #fff
+}
+
+.w3-hoverable-goal tr:hover {
+    background-color: #fbd300;
+    color: #000
+}
+
+.w3-hoverable-budget tr:hover {
+    background-color: #ffa837;
+    color: #000
+}
+
+.w3-hoverable-equity tr:hover {
+    background-color: #249cec;
+    color: #fff
+}
+
+.w3-hoverable-category tr:hover {
+    background-color: teal;
+    color: #fff
+}
+
+.w3-hoverable-liability tr:hover,
+.w3-ul.w3-hoverable-liability li:hover {
+    background-color: rgb(11, 126, 233, 0.5);
+    color: #fff
+}
+
+.w3-hoverable-asset tr:hover,
+.w3-ul.w3-hoverable-asset li:hover {
+    background-color: rgba(19, 172, 172, 0.7);
+    color: #000
+}
+
+.w3-hoverable-trnsfr tr:hover,
+.w3-ul.w3-hoverable-trnsfr li:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000
+}
+
+/* Tooltip container */
+.w3-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.w3-tooltip .w3-tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    min-height: auto;
+    background-color: black;
+    box-shadow: 0 0 15px 1px rgba(199, 229, 236, 0.3);
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 50%;
+    margin-right: 20px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s
+}
+
+/* Tooltip arrow */
+.w3-tooltip .w3-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    margin-top: -3px;
+    right: -11px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid black
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.w3-tooltip:hover .w3-tooltiptext {
+    visibility: visible;
+    opacity: 1
+}
+
+/* Sidebar */
+.sidebar {
+    top: 0;
+    height: 100%;
+    width: 240px;
+    position: fixed !important;
+    z-index: 3;
+    overflow: auto
+}
+
+@media(min-width:993px) {
+    .w3-modal-content {
+        width: 900px
+    }
+
+    .w3-hide-large {
+        display: none !important
+    }
+
+    .sidebar.w3-collapse {
+        display: block !important
+    }
+}
+
+@media(max-width:992px) {
+    .sidebar.w3-collapse {
+        display: none
+    }
+
+    .w3-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .w3-auto {
+        max-width: 100%
+    }
+}
+
+/* Top Bar Style */
+.w3-bar {
+    width: 95%;
+    height: 43px;
+    overflow: hidden;
+    z-index: 4;
+    right: 0
+}
+
+/* Hamburger menu */
+.w3-bar .w3-bar-item {
+    float: right;
+}
+
+/* Extra columns */
+
+.w3-col.s2-2 {
+    width: 20%
+}
+
+.w3-col.s2-5 {
+    width: 19.99999%
+}
+
+.w3-col.m2-2 {
+    width: 20%
+}
+
+.w3-col.m2-5 {
+    width: 22.33333%
+}
+
+.w3-col.m5-5 {
+    width: 46.99999%
+}
+
+.w3-col.l5-5 {
+    width: 46.99999%
+}
+
+.w3-col.l2-2 {
+    width: 20%
+}
+
+.w3-col.l2-5 {
+    width: 19.99999%
+}
+
+/* Center Container */
+.w3-center-container {
+    width: 90%;
+    margin: auto
+}
+
+/* Card-4 Styling */
+.w3-card-4 {
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+    box-shadow: 0 0 15px 1px rgba(199, 229, 236, 0.3)
+}
+
+.w3-card-4:hover {
+    box-shadow: 0 0 15px 2px rgba(251, 253, 253, 0.8)
+}
+
+/* Add Extra Padding Option */
+.w3-padding-xsmall {
+    padding: 1px 3px
+}
+
+/* Nav Button Styling */
+.w3-button:hover {
+    width: 85%;
+    color: #fff !important;
+    background-color: rgb(58, 102, 153, 0.2) !important;
+    box-shadow: 0 0 8px 2px rgba(251, 253, 253, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Imgage Styling */
+.imgs {
+    width: 100%;
+    max-height: 650px
+}
+
+.dynamic-img img {
+    border: black;
+    border-radius: 2%;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 10px;
+}
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s;
+  width: 70%;
+  height: 70%;
+  margin: 1% 2%;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.75); /* IE 9 */
+  -webkit-transform: scale(1.75); /* Safari 3-8 */
+  transform: scale(1.75); 
+  z-index: 1;
+}
+
+.imganime {
+    width: 180px
+}
+
+.top150 {
+    margin-top: 150px
+}
+
+.grid {
+    min-height: 380px
+}
+
+.strike {
+    text-decoration: line-through
+}
+
+.nodecor {
+    text-decoration: none
+}
+
+.textbox {
+    height: 150px
+}
+
+/* Financial Health indicator tweaks */
+.arrow-red {
+    color: rgba(246, 109, 68, 0.7)
+}
+
+.arrow-orange {
+    color: rgba(232, 183, 9, 0.7)
+}
+
+.arrow-green {
+    color: rgba(100, 194, 166, 0.7)
+}
+
+/* Goal progress bars */
+.goal-container {
+    width: 100%;
+    /* Full width */
+    background-color: rgba(46, 47, 48, 0.82)
+}
+
+.goals {
+    text-align: center;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+    background-color: rgba(7, 166, 52, 0.7)
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    /* background: #fff; */
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    /* font: 32px Arial, sans-serif; */
+}
+
+/* Modal properties */
+.modal {
+    /* background: rgba(52, 53, 54, 0.671);     */
+    /* border-radius: 10px;  */
+    filter: drop-shadow(0px 0px 25px #bbd5f0ab);
+    /* backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+}
+
+.modal-body {
+    background: rgba(10, 12, 15, 0.45)
+}
+
+/* .modal-dialog {
+  background: rgba(52, 53, 54, 0.3);
+} */
+.modal-content {
+    background: rgba(10, 12, 15, 0.45)
+}
+
+.modal-header {
+    background: rgba(10, 12, 15, 0.45)
+}
+
+.modal-footer {
+    background: rgba(10, 12, 15, 0.45)
+}
+
+/* Text decoration enhancements */
+.underline {
+    text-decoration: underline
+}
+
+/* Header Greeting */
+.greeting {
+    word-wrap: break-word;
+    font-size: 16px
+}
+
+.logo {
+    width: 120px;
+    height: 30px
+}
+
+.underline-double {
+    text-decoration: underline;
+    text-decoration-style: double
+}
+
+/* Index card properties */
+.overview-cards {
+    min-height: 162px;
+    min-width: 245px;
+    max-width: 280px
+}
+
+.acct-charts {
+    min-width: 260px
+}
+
+/* Financial ratio card properties */
+.finratio-cards {
+    min-height: 160px;
+    max-height: 200px;
+    min-width: 325px
+}
+
+/* Asset card properties */
+.asset-cards,
+.budget-cards,
+.liab-cards {
+    min-height: 140px;
+    min-width: 180px
+}
+
+/* Asset table properties */
+.asset-tables {
+    min-height: 320px;
+    min-width: 280px
+}
+
+/* Budget table balances */
+.budget-bal {
+    min-height: 220px;
+    min-width: 360px
+}
+
+/* Liability balance tables */
+.liab-tbls {
+    min-height: 120px;
+    min-width: 390px
+}
+
+/* Last 7 user entries tables */
+.last-7 {
+    min-height: 280px;
+    min-width: 380px
+}
+
+/* User logins table */
+.logins {
+    max-width: 380px
+}
+
+/* Balance font format */
+.balance {
+    font-family: Calibri, Arial;
+    font-size: 22px;
+    text-align: right
+}
+
+/* Balance and Value font format in table */
+.t-balval {
+    font-family: Calibri, Arial;
+    font-size: 18px
+}
+
+/* Budget overbudget red text */
+.bal-over {
+        color: rgb(240, 95, 76)
+}
+
+.bal-over:hover{
+    color: rgb(150, 21, 4)
+}
+
+.over-balance {
+    font-family: Calibri, Arial;
+    font-size: 22px;
+    text-align: right;
+    color: rgb(240, 95, 76)
+}
+
+/* Chart of Accounts font format */
+.charts {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* FontAwesome icon effects */
+*>.fa.fa-hover-show,
+*:hover>.fa.fa-hover-hidden {
+    display: none
+}
+
+*:hover>.fa.fa-hover-show {
+    display: inline-block
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noscrollbar::-webkit-scrollbar {
+    display: none
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* chart style */
+.chart-style {
+    max-height: 320px;
+    min-height: 240px;
+    display: inline-block;
+    position: relative;
+    width: 100%
+}
+
+.index-chart-style {
+    max-height: 460px;
+    min-height: 340px;
+    display: inline-block;
+    position: relative;
+    width: 100%
+}
+
+.scrollheader {
+    height: 50px;
+    overflow: hidden;
+    position: relative
+}
+
+.scrollheader h3 {
+    font-size: 2em;
+    color: rgb(3, 18, 41);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scrollheader 15s linear infinite;
+    -webkit-animation: scrollheader 15s linear infinite;
+    animation: scrollheader 15s linear infinite
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scrollheader {
+    0% {
+        -moz-transform: translateX(100%)
+    }
+
+    100% {
+        -moz-transform: translateX(-100%)
+    }
+}
+
+@-webkit-keyframes scrollheader {
+    0% {
+        -webkit-transform: translateX(100%)
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%)
+    }
+}
+
+@keyframes scrollheader {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(100%);
+        /* Firefox bug fix */
+        transform: translateX(100%)
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Firefox bug fix */
+        transform: translateX(-100%)
+    }
+}
+
+/* Toggle hide switch */
+.switch {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    width: 34px;
+    height: 22px;
+    border: 2px solid #526471;
+    border-radius: 16px
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(66, 88, 106, 0.83);
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 1px;
+    top: 1px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+input:checked+.slider {
+    background-color: #1982d7
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px)
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 16px
+}
+
+.slider.round:before {
+    border-radius: 50%
+}
+
+/* Table th vertical and horizontal line */
+.vline {
+    border-left: 2px solid white;
+    height: 100%
+}
+
+.hline {
+    border-bottom: 2px solid white
+}
+
+.tline {
+    border-top: 3px solid white
+}
+
+.dblline {
+    border-top: 3px solid white;
+    text-decoration: underline double
+}
