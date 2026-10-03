@@ -1,6 +1,4 @@
 # Financial Web App
-![Screenshot from 2023-09-16 20-56-42](https://github.com/nicholsonz/FinSimp/assets/77360596/3ccf468b-5695-4e0f-bc22-afe96a53bf2f)
-![Screenshot from 2023-09-10 13-53-01](https://github.com/nicholsonz/FinStat/assets/77360596/833f48c3-376c-445d-87bb-ce4cac0060de)
 
 
 
@@ -35,7 +33,7 @@ Any number of Accounts can be created. When creating a new Account, select the a
 
 ## Installation
 
-No fancy package managers are needed here. Just create the "financial" database and then import the financial.sql file into your database, then edit the config.php file for your database variables. 
+No fancy package managers are needed here. Just create the "finsmip" database and then import the finsmip.sql file into your database, then edit the config.php file for your database variables. 
 
 Create a user and assign a password for the database. Be sure to change the user and password for your system.
 
@@ -46,13 +44,13 @@ Login to your server and run the code below or use phpMyAdmin instead:
     sudo mysql
 Then
     
-    CREATE DATABASE financial; 
-    GRANT ALL PRIVILEGES ON financial.* to 'user'@'localhost' IDENTIFIED BY 'password';
+    CREATE DATABASE finsimp; 
+    GRANT ALL PRIVILEGES ON finsimp.* to 'user'@'localhost' IDENTIFIED BY 'password';
     FLUSH PRIVILEGES;
     EXIT;
-Next, import the financial.sql file
+Next, import the finsimp.sql file
 
-    sudo mysql financial < financial.sql
+    sudo mysql finsimp < finsimp.sql
 
 
 ## Usage
